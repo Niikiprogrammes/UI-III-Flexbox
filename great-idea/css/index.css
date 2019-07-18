@@ -16,24 +16,34 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
+	margin: 20;
+	padding: 20;
+	border: 24;
 	font-size: 100%;
-	font: inherit;
+	font-family: italic;
 	vertical-align: baseline;
+	
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
+	color: lightcoral;
 }
 body {
-	line-height: 1;
+	line-height: 6;
 }
 ol, ul {
 	list-style: none;
 }
+ nav {
+ display:flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ } 
+
+
+
 blockquote, q {
 	quotes: none;
 }
@@ -44,23 +54,30 @@ q:before, q:after {
 }
 table {
 	border-collapse: collapse;
-	border-spacing: 0;
+	border-spacing: 6;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
 }
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 14;
+	display: flex;
+	flex-direction: row;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+	margin-bottom: 15px;
+	display: flex;
+	flex-direction: row
+	
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
